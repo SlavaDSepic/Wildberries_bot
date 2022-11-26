@@ -8,8 +8,6 @@ import random
 from fake_useragent import UserAgent
 
 # os.environ['MOZ_HEADLESS'] = '1'
-# Указываем полный путь к geckodriver.exe на вашем ПК.
-
 
 n = int(input('Введите количество авторизаций: '))
 
@@ -46,7 +44,7 @@ def get_likes():
     def get_like(products):
         # Получение номера на сервисе OnlineSim:
 
-        api_key = '6104cdf2aa594a6a6fce642b03fd63f2'
+        api_key = '6104cdf2aa594a6a6fce642b03fd63f2'  # введите свой API, этот указан для примера
         get_number_url = f'https://onlinesim.ru/api/getNum.php?apikey=' \
             f'{api_key}&service=wildberries&number=1'
 
